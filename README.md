@@ -1,4 +1,3 @@
-
 <p align="center">
   <a href="" rel="noopener">
  <img width=200px height=200px src="./frontend/src/assets/images/smart-bidding-low-resolution-color-logo.png" alt="Project logo">
@@ -6,7 +5,7 @@
  <h1 style="text-align:center;">Blockchain Based Online Contracting/Tendering System</h1>
 </p>
 
-<h3 align="center">test</h3>
+<h3 align="center">test of the given proj</h3>
 
 <div align="center">
 
@@ -39,36 +38,50 @@ This a blockchain based Online contracting DApp which for tender creation and bi
 
 ## 🏁 Getting Started <a name = "getting_started" id= "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
 The softwares to install are:
+
 - npm
+
 ```
 https://www.npmjs.com/
 ```
+
 - NodeJs
+
 ```
 https://nodejs.org/
 ```
+
 - Angular-cli
+
 ```
 https://angular.io/cli
 ```
+
 - Ganche test newtork
+
 ```
 https://trufflesuite.com/ganache/
 ```
+
 - Metamask wallet
+
 ```
 https://metamask.io/download/
 ```
+
 - Postman
+
 ```
 https://www.postman.com/downloads/
 ```
+
 - Visual Studio Code
+
 ```
 https://code.visualstudio.com/download
 ```
@@ -76,98 +89,123 @@ https://code.visualstudio.com/download
 ### Installing
 
 Follow the below steps to run the code in local environment:
+
 1. Clone the project repository
-    ```
-    git clone https://github.com/shrawank22/blockchain-based-contracting-system.git
 
-    ``` 
+   ```
+   git clone https://github.com/shrawank22/blockchain-based-contracting-system.git
+
+   ```
+
 2. In the root directory of the project to install nodu=e module from package.json for contacts and backend
-    ```
-    npm install
 
-    ```
+   ```
+   npm install
+
+   ```
+
 3. Go the frontend directory of the project in another terminal to install nodu=e module from package.json for frontend angular app
-    ```
-    npm install
 
-    ```
+   ```
+   npm install
+
+   ```
+
 4. To compile and deploy the contracts into ganache test network
- - remote ganche network
-  - add the following to truffle-config.js to
-    ```
-    networks: {
-    development: {
-      host: "127.0.0.1",
-      port: 8545,
-      network_id: "*" //Match any network id
-     }
-    },
 
-    ```
-  - add the following to server.js to listen to the remote ganche test netowrk
-    ```
-    const Web3 = require('web3');
-    var web3 = new Web3(new Web3.providers.HttpProvider('http://127.0.0.1:8545'))
+- remote ganche network
+- add the following to truffle-config.js to
 
-    ```
-  - Command to start ganche network
-    ```
-    ganche-cli
+  ```
+  networks: {
+  development: {
+    host: "127.0.0.1",
+    port: 8545,
+    network_id: "*" //Match any network id
+   }
+  },
 
-    ```
-  - command to compile and deploy the contracts
-    ```
-    truffle compile
-    truffle migrate
+  ```
 
-    ```
+- add the following to server.js to listen to the remote ganche test netowrk
 
- - local ganche network
-  - add the following to truffle-config.js to
-    ```
-    networks: {
-    development: {
-      host: "127.0.0.1",
-      port: 7545,
-      network_id: "*" //Match any network id
-     }
-    },
+  ```
+  const Web3 = require('web3');
+  var web3 = new Web3(new Web3.providers.HttpProvider('http://127.0.0.1:8545'))
 
-    ```
-  - add the following to server.js to listen to the remote ganche test netowrk
-    ```
-    const Web3 = require('web3');
-    var web3 = new Web3(new Web3.providers.HttpProvider('http://127.0.0.1:7545'))
+  ```
 
-    ```
-  - To start local ganache network open the Ganache apllication in either quickstart or workspace
+- Command to start ganche network
 
-  - command to compile and deploy the contracts
-    ```
-    truffle compile
-    truffle migrate
+  ```
+  ganche-cli
 
-    ```
+  ```
+
+- command to compile and deploy the contracts
+
+  ```
+  truffle compile
+  truffle migrate
+
+  ```
+
+- local ganche network
+- add the following to truffle-config.js to
+
+  ```
+  networks: {
+  development: {
+    host: "127.0.0.1",
+    port: 7545,
+    network_id: "*" //Match any network id
+   }
+  },
+
+  ```
+
+- add the following to server.js to listen to the remote ganche test netowrk
+
+  ```
+  const Web3 = require('web3');
+  var web3 = new Web3(new Web3.providers.HttpProvider('http://127.0.0.1:7545'))
+
+  ```
+
+- To start local ganache network open the Ganache apllication in either quickstart or workspace
+
+- command to compile and deploy the contracts
+
+  ```
+  truffle compile
+  truffle migrate
+
+  ```
+
 5. Start the NodeJs server using the following command:
-    ```
-    npm run satrt
 
-    ```
-    The server is started on http://127.0.0.1:8082 listening to ganache test network.
+   ```
+   npm run satrt
+
+   ```
+
+   The server is started on http://127.0.0.1:8082 listening to ganache test network.
 
 6. Now run the frontend angular app using the following command
-    ```
-    npm start
 
-    ```
-    The Angular app starts on http://localhost:4200
+   ```
+   npm start
+
+   ```
+
+   The Angular app starts on http://localhost:4200
 
 7. To run test files for smart contracts in truffle
+
    ```
    truffle test
 
    ```
-
 
 ## 🎈 Usage <a name="usage" id="usage"></a>
 
@@ -182,28 +220,30 @@ Follow the below steps to run the code in local environment:
 9. The party logout from the app by clicking on profile -> logout.
 
 ### Steps to use the DApp
+
 1. Visit the page http://localhost:4200/ after starting ganache, NodeJs server and angular app, then import the secong ganache account into metamsk wallet as the first address is where our contracts are deployed.
 2. Now click on register and fill in the details. To fetched wallet id from metamask, click on the button next to it. It should automatically fill in your address and submit the form to register.
 3. Once registration is successful , go to login page and connect to wallet same way as in above step, type your password and login. Voila, now you can access the DApp.
-4. To get started, create a tender by going to tenders tab of dashboard. here you can place a tender by clicking on create tender and entering the tender details. On submiting it  tender is created. Now the tender is in new state , so it can be edited and deleted. But the tender is not open to bid.
+4. To get started, create a tender by going to tenders tab of dashboard. here you can place a tender by clicking on create tender and entering the tender details. On submiting it tender is created. Now the tender is in new state , so it can be edited and deleted. But the tender is not open to bid.
 5. The tender is then validated validators, which not implemented on UI but has written api and backend code to update the status on validation to new state. to update tender status use the following api in postman
-    ```
-    POST http://localhost:8082/api/tender/update-status
 
-    body:
-    {
-      "tenderId": 0,
-      "tenderStatus": 1,
-      "issuerAddress": "0x132527dC4c9F39bD650F03d51D6217152AFe26Fa"
-    }
-    
-    ```
+   ```
+   POST http://localhost:8082/api/tender/update-status
+
+   body:
+   {
+     "tenderId": 0,
+     "tenderStatus": 1,
+     "issuerAddress": "0x132527dC4c9F39bD650F03d51D6217152AFe26Fa"
+   }
+
+   ```
+
 6. Now the tender is in open state, then it is ready to accept bids. Click on place bids and enter details and click on save. This action cannot be done by owner of tender, so create another account as directed in step 1 and 2. Now from this account the active tender open for bids can be see and the party can place bids.
 7. once the bid is created, you can view it in Bids tab along with the tender on which bid was placed. This bid can be viewed by tender owner and bidder but can edited/deleted by bidder only(restricted for security). Also the bid can be edited/ deleted in pending state i.e., before tender deadline.
 8. Now there projects when the tenders after assigning to bidder will appear and milestones are tracked(incomplete on Ui, but written functionality in smart contracts )
 9. Similarily, the validate tender and bid selection happens in dashboard tab(incomplete on Ui, but written functionality in smart contracts )
 10. for all the token implementation, and the reward system, trustScore implementation (incomplete on Ui, but written functionality in smart contracts ).
-
 
 ## ⛏️ Built Using <a name = "built_using" id="built_using"></a>
 
@@ -216,10 +256,10 @@ Follow the below steps to run the code in local environment:
 
 ## ✍️ Authors <a name = "authors" id="authors"></a>
 
-- [@shrawank22](https://github.com/shrawank22) 
-- [@Kapil-K-Kathiriya](https://github.com/Kapil-K-Kathiriya) 
-- [@asheejain](https://github.com/asheejain) 
-- [@Srujana41](https://github.com/Srujana41) 
+- [@shrawank22](https://github.com/shrawank22)
+- [@Kapil-K-Kathiriya](https://github.com/Kapil-K-Kathiriya)
+- [@asheejain](https://github.com/asheejain)
+- [@Srujana41](https://github.com/Srujana41)
 
 ## 🎉 References <a name = "references" id="references"></a>
 
